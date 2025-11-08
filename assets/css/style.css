@@ -69,10 +69,12 @@ header {
     background: linear-gradient(to right, var(--text-color) 50%, var(--accent-color) 50%);
     background-size: 200% 100%;
     background-position: right bottom;
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: all 0.5s ease-out;
 }
+
 
 .logo h3:hover {
     background-position: left bottom;
