@@ -1087,11 +1087,13 @@ header {
 }
 
 
+/* ----------------------------------- */
 /* --- UNIVERSAL SCROLL REVEAL STYLES --- */
+/* ----------------------------------- */
+
 /* 1. Base Initial State (Hidden/Translated Down) for common content blocks */
 .home > .home-text > p, .home > .home-text > .home-btn, .home > .home-img,
 .about > *,
-.skills > h2,
 .education > h2, .education > .education-container > *,
 .more-info > h2, .more-info > .more-info-container > *,
 .project > h2, .project > .title-project > *, .project > .tools, .project > .projects-container > *,
@@ -1106,7 +1108,6 @@ header {
 /* 2. Base Visible State (Triggered by JS's .is-visible class on the section) */
 .home.is-visible > .home-text > p, .home.is-visible > .home-text > .home-btn, .home.is-visible > .home-img,
 .about.is-visible > *,
-.skills.is-visible > h2,
 .education.is-visible > h2, .education.is-visible > .education-container > *,
 .more-info.is-visible > h2, .more-info.is-visible > .more-info-container > *,
 .project.is-visible > h2, .project.is-visible > .title-project > *, .project.is-visible > .tools, .project.is-visible > .projects-container > *,
@@ -1129,15 +1130,11 @@ header {
 /* ABOUT PAGE (about.html) */
 /* About Section */
 .about.is-visible .about-container { transition-delay: 0.1s; }
-/* Skills Section - One-by-one reveal */
-.skills.is-visible h2 { transition-delay: 0.1s; }
 
 /* Education Section */
-.education.is-visible h2 { transition-delay: 0.1s; }
 .education.is-visible .education-card:nth-child(1) { transition-delay: 0.2s; }
 .education.is-visible .education-card:nth-child(2) { transition-delay: 0.3s; }
 /* More Info Section */
-.more-info.is-visible h2 { transition-delay: 0.1s; }
 .more-info.is-visible .more-info-card:nth-child(1) { transition-delay: 0.2s; }
 .more-info.is-visible .more-info-card:nth-child(2) { transition-delay: 0.3s; }
 
@@ -1212,18 +1209,6 @@ header {
     transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
-.about-content h3::after,
-.education h2::after,
-.more-info h2::after,
-.project .title-project h4::after {
-    transform-origin: left;
-}
-
-.skills h2::after,
-.contact h3::after {
-    transform-origin: center;
-}
-
 .about.is-visible .about-content h3::after,
 .skills.is-visible h2::after,
 .education.is-visible h2::after,
@@ -1231,5 +1216,4 @@ header {
 .project.is-visible .title-project h4::after,
 .contact.is-visible h3::after {
     transform: scaleX(1);
-    transition-delay: 0.2s;
 }
