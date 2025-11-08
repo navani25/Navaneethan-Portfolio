@@ -679,8 +679,13 @@ header {
         padding: 120px 2rem 2rem 2rem;
     }
 
+    .home-text h2 {
+        font-size: 2.5rem;
+    }
+
     .home-text h3 {
         padding-left: 0;
+        font-size: 1.2rem;
     }
 
     .home-text h3::before {
@@ -722,6 +727,10 @@ header {
 }
 
 @media (max-width: 768px) {
+    header {
+        justify-content: space-between;
+        padding: 20px;
+    }
 
     .header-list,
     .header-list-icon {
@@ -730,6 +739,24 @@ header {
 
     .menu-toggle {
         display: block;
+    }
+    
+    .home {
+        padding: 100px 1.5rem 2rem;
+        gap: 2rem;
+    }
+
+    .home-text h2 {
+        font-size: 2.2rem;
+        white-space: normal;
+        border-right: none;
+        animation: none;
+    }
+
+    .home-text h3 {
+        font-size: 1.1rem;
+        animation: none; /* remove animation */
+        opacity: 1; /* ensure it's visible */
     }
 
     .project,
@@ -741,6 +768,7 @@ header {
         padding: 100px 20px 20px;
     }
 }
+
 
 /* --- UPDATED SKILLS SECTION STYLES --- */
 @keyframes marquee {
