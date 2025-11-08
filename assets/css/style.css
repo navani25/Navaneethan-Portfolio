@@ -757,6 +757,11 @@ header {
         font-size: 1.1rem;
         animation: none; /* remove animation */
         opacity: 1; /* ensure it's visible */
+        white-space: nowrap; /* Prevent text from wrapping */
+    }
+    
+    .home-text h3::before {
+        display: none; /* Remove the line on mobile for a cleaner look */
     }
 
     .project,
