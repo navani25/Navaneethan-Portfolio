@@ -537,6 +537,7 @@ header {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    
 }
 
 .contact-content {
@@ -544,6 +545,7 @@ header {
     gap: 50px;
     flex-wrap: wrap;
     align-items: flex-start;
+    
 }
 
 .contact-info {
@@ -557,7 +559,7 @@ header {
     gap: 15px;
     font-size: 1.1rem;
     color: var(--text-color);
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .contact-item i {
@@ -589,6 +591,7 @@ header {
     padding: 40px;
     border-radius: 15px;
     box-shadow: var(--card-shadow);
+    margin-top: -60px;
 }
 
 .contact-form .form-group {
